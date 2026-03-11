@@ -1,0 +1,170 @@
+================================================================
+  MIAMI MALL INCIDENT — INVESTIGATION WORKSHOP
+  Cardiff University | The Matts Present | 2026
+================================================================
+
+If the website isn't loading, everything you need is right here.
+Work through the two exercises below in order.
+
+----------------------------------------------------------------
+  BACKGROUND: THE INCIDENT
+----------------------------------------------------------------
+
+New Year's Day, 1 January 2024. A mass police response descends
+on Bayside Marketplace in Miami, Florida. Over 60 officers are
+deployed. Roads are closed. Helicopters circle overhead.
+
+Official explanation: a teenage brawl.
+
+What went viral online: dozens of eyewitness videos appear to
+show 8-10 foot tall "Shadow Beings" moving through the mall's
+glass. The footage spreads globally within hours. Governments
+and Miami police decline to comment on the creature claims.
+The story disappears from mainstream media within days.
+
+The online community never let it go.
+
+----------------------------------------------------------------
+  BACKGROUND: JOSHUA PETER — YOUR INTERVIEW SUBJECT
+----------------------------------------------------------------
+
+Name:         Joshua Peter, age 32
+From:         Hialeah, Florida
+Background:   Former blue-collar worker
+
+Joshua was at Bayside Marketplace on the night of the incident.
+He claims to have witnessed "Shadow Beings" physically phase
+through the mall's glass in front of him.
+
+In the weeks after 1 January 2024, his life unravelled. He lost
+his job, became estranged from family, and began obsessively
+documenting what he saw. By 2025 he had self-published a
+survivalist account alleging a coordinated government cover-up
+and what he calls a "containment failure."
+
+Now in 2026, Joshua is a deeply cynical and paranoid source.
+He claims to hold a file — DSC_0042_RAW_RECOVERED.mov — stored
+on an air-gapped device, which he says is uncorrupted digital
+evidence the public has never seen.
+
+He is especially haunted by "Fitz" — a fellow witness from that
+night who subsequently vanished. Joshua believes Fitz was
+removed by federal tactical teams. Police have not investigated.
+
+Today is the first time Joshua has agreed to speak to an
+outside journalist.
+
+Your job: find out if the evidence is real — or if Joshua
+himself is the story.
+
+----------------------------------------------------------------
+  EXERCISE 01 — BACKGROUND RESEARCH (NotebookLM)
+----------------------------------------------------------------
+
+Before you interview Joshua, use NotebookLM to build your
+background intelligence on the incident.
+
+STEP 1 — NotebookLM Prompt Guide
+A set of structured prompts to help you interrogate the
+source material effectively.
+
+  Link: https://wmgmm.github.io/thematts/notebooklm.html
+
+STEP 2 — Investigation Notebook
+A NotebookLM notebook pre-loaded with Miami Mall source
+material: news reports, forum posts, Joshua's published
+account, and technical data claims.
+
+  Link: https://notebooklm.google.com/notebook/7f6d632c-4053-4e98-be47-c99078a6e73a
+
+Goal: know Joshua's story before he does.
+
+Suggested prompts to get you started:
+
+  - "Summarise the key claims made by eyewitnesses on the night."
+  - "What does the official police account say and what does it
+     leave out?"
+  - "What is known about the person referred to as Fitz?"
+  - "What technical evidence does Joshua claim to have and how
+     credible are those claims?"
+  - "What inconsistencies appear across different accounts
+     of the same night?"
+
+----------------------------------------------------------------
+  EXERCISE 02 — INTERVIEW: JOSHUA PETER
+----------------------------------------------------------------
+
+You are now going to conduct a live AI interview with Joshua.
+Go to the link below and select Joshua Peter when prompted.
+
+  Link: https://1410-2a00-23c6-9d4d-4201-6013-7878-6017-a6db.ngrok-free.app
+
+Use the three goals below to guide your conversation. You do
+not have to follow them in order — let Joshua lead, then
+steer back when you need to.
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  GOAL 01 — Secure Physical Evidence
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Establish custody of the footage before anything else.
+
+  Suggested questions:
+  1. "Where is DSC_0042_RAW_RECOVERED.mov physically stored
+     right now? Who else has access?"
+  2. "Walk me through the first 30 seconds of that footage."
+  3. "Has anyone else seen this file since January 2024?
+     Has it been copied?"
+  4. "Why did you air-gap the device?"
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  GOAL 02 — Verify Technical Data
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Push on the specifics — data doesn't lie, but sources do.
+
+  Suggested questions:
+  1. "You mention GPS logs. What device recorded them and
+     what do the coordinates show?"
+  2. "14Hz is below the threshold of human hearing. What
+     equipment captured that audio?"
+  3. "People near infrasound often report dread or unease.
+     Did you experience that?"
+  4. "Has anyone with technical expertise independently
+     reviewed your data?"
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  GOAL 03 — Trace the Disappeared: Fitz
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  A missing witness changes everything.
+
+  Suggested questions:
+  1. "Full name, how you knew each other, last confirmed
+     contact with Fitz."
+  2. "Was Fitz with you at Bayside that night?"
+  3. "What was Fitz's account of what they saw?
+     Did it match yours?"
+  4. "When exactly did Fitz go dark? Did they say
+     anything before?"
+  5. "Have police been notified? What was their response?"
+
+----------------------------------------------------------------
+  ALL LINKS AT A GLANCE
+----------------------------------------------------------------
+
+  NotebookLM Prompt Guide
+  https://wmgmm.github.io/thematts/notebooklm.html
+
+  Investigation Notebook (NotebookLM)
+  https://notebooklm.google.com/notebook/7f6d632c-4053-4e98-be47-c99078a6e73a
+
+  Interview Joshua Peter (BeyondTheManual)
+  https://1410-2a00-23c6-9d4d-4201-6013-7878-6017-a6db.ngrok-free.app
+
+  Background video — Bayside Marketplace, 1 Jan 2024
+  https://www.youtube.com/watch?v=Ek_8t1sdvGc
+
+----------------------------------------------------------------
+  Cardiff University Workshop — The Matts Present — 2026
+----------------------------------------------------------------
