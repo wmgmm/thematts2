@@ -49,16 +49,20 @@ export default function App() {
         <div className="hero-video-row">
           <div className="video-card">
             <div className="tape" style={{ top: '-12px', left: '48px' }} />
-            <div className="video-wrapper">
-              <iframe
-                src="https://www.youtube.com/embed/Ek_8t1sdvGc"
-                title="Miami Mall Incident"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+            <a
+              href="https://www.youtube.com/watch?v=Ek_8t1sdvGc"
+              target="_blank"
+              rel="noreferrer"
+              className="video-thumb-link"
+            >
+              <img
+                src="https://img.youtube.com/vi/Ek_8t1sdvGc/hqdefault.jpg"
+                alt="Bayside Marketplace incident footage, 1 Jan 2024"
+                className="video-thumb"
               />
-            </div>
-            <span className="handwrite video-caption">Bayside Marketplace -- 1 Jan 2024</span>
+              <div className="video-play-btn">▶</div>
+            </a>
+            <span className="handwrite video-caption">Bayside Marketplace -- 1 Jan 2024 ↗</span>
           </div>
           <div className="hero-video-aside">
             <p>
