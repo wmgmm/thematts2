@@ -1,0 +1,450 @@
+:root {
+  --yellow:   #FFD600;
+  --black:    #0a0a0a;
+  --red:      #D62828;
+  --white:    #fafafa;
+  --paper:    #fffde7;
+  --ink:      #1a1a1a;
+  --muted:    #5a5a5a;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--yellow);
+  color: var(--black);
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.handwrite {
+  font-family: 'Caveat', cursive;
+}
+
+/* --- Utility: Stamp --- */
+.stamp {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  border: 3px solid currentColor;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  transform: rotate(-2deg);
+  font-family: Inter, sans-serif;
+}
+
+.stamp--red {
+  color: var(--red);
+}
+
+/* --- Utility: Sticker --- */
+.sticker {
+  display: inline-block;
+  background: var(--white);
+  border: 2px solid var(--black);
+  padding: 8px 14px;
+  transform: rotate(-1.5deg);
+  box-shadow: 3px 3px 0 var(--black);
+  font-size: 1rem;
+}
+
+.sticker--red {
+  background: var(--red);
+  color: var(--white);
+  border-color: var(--red);
+  box-shadow: 3px 3px 0 var(--black);
+}
+
+.sticker--rotate {
+  transform: rotate(1.5deg);
+}
+
+/* --- Utility: Tape --- */
+.tape {
+  display: block;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  transform: rotate(-0.5deg);
+  width: 80px;
+}
+
+/* --- Utility: Oversized headline --- */
+.oversized {
+  font-size: clamp(3.5rem, 10vw, 9rem);
+  line-height: 0.9;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+}
+
+/* --- Utility: Ruled line --- */
+.ruled-line {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--black);
+}
+
+/* --- App wrapper --- */
+.app {
+  min-height: 100vh;
+}
+
+/* --- Hero --- */
+.hero {
+  padding: 60px 48px 40px;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.hero-sub {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 32px;
+}
+
+/* "The Matts present" */
+.hero-presenter {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--ink);
+  opacity: 0.7;
+}
+
+/* Two-column hero: headline left, context right */
+.hero-main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-top: 8px;
+}
+
+.hero-context {
+  padding-top: 12px;
+}
+
+.incident-brief {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 520px;
+  margin: 0 0 28px;
+}
+
+.sticker-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+/* Video row */
+.hero-video-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 48px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
+.video-card {
+  position: relative;
+  background: var(--black);
+  padding: 12px 12px 8px;
+  box-shadow: 4px 4px 0 var(--black);
+}
+
+.video-card iframe {
+  display: block;
+  width: 100%;
+}
+
+.video-caption {
+  display: block;
+  color: var(--white);
+  font-size: 1rem;
+  padding: 6px 4px 2px;
+  opacity: 0.7;
+}
+
+.hero-video-aside p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 16px;
+  color: var(--ink);
+}
+
+.hero-video-aside p:last-of-type {
+  margin-bottom: 0;
+}
+
+.hero-sub p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+/* --- Exercise sections --- */
+.exercise {
+  padding: 60px 48px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.exercise-eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: -40px;
+}
+
+.exercise h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1;
+  font-weight: 900;
+  position: sticky;
+  top: 24px;
+}
+
+/* --- Sidebar / Brief card (Exercise 01) --- */
+.sidebar-content {
+  width: 100%;
+}
+
+.brief-card {
+  background: var(--white);
+  border: 2px solid var(--black);
+  padding: 28px;
+  box-shadow: 4px 4px 0 var(--black);
+}
+
+.brief-card__header {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  color: var(--ink);
+}
+
+.brief-card p {
+  margin: 0 0 24px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.brief-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.brief-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.step-num {
+  font-size: 1.8rem;
+  color: var(--red);
+  min-width: 40px;
+  line-height: 1;
+}
+
+.brief-step > div {
+  flex: 1;
+}
+
+.brief-step strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.brief-step p {
+  margin: 0 0 10px;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid var(--black);
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  color: var(--black);
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-outline:hover {
+  background: var(--black);
+  color: var(--yellow);
+}
+
+/* --- Interview / Dossier (Exercise 02) --- */
+.interview-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Dossier header card */
+.dossier-card {
+  background: var(--white);
+  border: 2px solid var(--black);
+  padding: 28px;
+  box-shadow: 4px 4px 0 var(--black);
+  position: relative;
+}
+
+.dossier-stamp {
+  margin-bottom: 16px;
+}
+
+.dossier-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.dossier-table th {
+  text-align: left;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 6px 16px 6px 0;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: top;
+}
+
+.dossier-table td {
+  padding: 6px 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.dossier-profile {
+  margin: 20px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(10, 10, 10, 0.12);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+/* Goal cards */
+.goal-card {
+  background: var(--white);
+  border: 2px solid var(--black);
+  box-shadow: 4px 4px 0 var(--black);
+}
+
+.goal-card__header {
+  padding: 24px 28px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.goal-num {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--black);
+  opacity: 0.12;
+  min-width: 80px;
+}
+
+.goal-card__title {
+  flex: 1;
+}
+
+.goal-card__title h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.goal-card__annotation {
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.goal-reveal-btn {
+  background: var(--black);
+  color: var(--yellow);
+  border: 2px solid var(--black);
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  white-space: nowrap;
+  align-self: center;
+  transition: background 0.15s, color 0.15s;
+}
+
+.goal-reveal-btn:hover {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.goal-card__questions {
+  overflow: hidden;
+  border-top: 2px solid var(--black);
+}
+
+.goal-card__questions-inner {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.question-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(10, 10, 10, 0.1);
+}
+
+.question-item:last-child {
+  border-bottom: none;
+}
+
+.question-num {
+  font-family: 'Caveat', cursive;
+  font-size: 1.1rem;
+  color: var(--red);
+  min-width: 28px;
+  font-weight: 600;
+}
+
+.question-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink);
+  font-style: italic;
+}
