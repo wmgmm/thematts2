@@ -26,6 +26,7 @@ h1, h2, h3 {
 
 .handwrite {
   font-family: 'Caveat', cursive;
+  font-synthesis: none;
 }
 
 /* --- Utility: Stamp --- */
@@ -39,6 +40,7 @@ h1, h2, h3 {
   padding: 4px 10px;
   transform: rotate(-2deg);
   font-family: Inter, sans-serif;
+  font-synthesis: none;
 }
 
 .stamp--red {
@@ -119,10 +121,11 @@ h1, h2, h3 {
 
 /* "The Matts present" */
 .hero-presenter {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: 20px;
   color: var(--ink);
   opacity: 0.7;
+  letter-spacing: -0.02em;
 }
 
 /* Two-column hero: headline left, context right */
@@ -163,15 +166,27 @@ h1, h2, h3 {
 }
 
 .video-card {
-  position: relative;
   background: var(--black);
   padding: 12px 12px 8px;
-  box-shadow: 4px 4px 0 var(--black);
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+  overflow: hidden;
 }
 
-.video-card iframe {
-  display: block;
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
 }
 
 .video-caption {
@@ -324,6 +339,7 @@ h1, h2, h3 {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
+  table-layout: fixed;
 }
 
 .dossier-table th {
@@ -332,7 +348,7 @@ h1, h2, h3 {
   font-weight: 600;
   padding: 6px 16px 6px 0;
   white-space: nowrap;
-  width: 1%;
+  width: 130px;
   vertical-align: top;
 }
 
@@ -340,6 +356,7 @@ h1, h2, h3 {
   padding: 6px 0;
   font-weight: 600;
   color: var(--ink);
+  word-break: break-word;
 }
 
 .dossier-profile {
@@ -364,6 +381,7 @@ h1, h2, h3 {
   align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .goal-num {
@@ -447,4 +465,63 @@ h1, h2, h3 {
   line-height: 1.5;
   color: var(--ink);
   font-style: italic;
+}
+
+/* ============================================================
+   RESPONSIVE -- laptop (<=1440px) and narrower screens
+   ============================================================ */
+
+@media (max-width: 1440px) {
+  .hero {
+    padding: 40px 32px 32px;
+  }
+
+  /* Stack headline and context vertically */
+  .hero-main {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Stack video and aside vertically */
+  .hero-video-row {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 680px;
+  }
+
+  /* Stack exercise label + heading + content vertically */
+  .exercise {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 40px 32px;
+  }
+
+  /* No sticky heading needed when stacked */
+  .exercise h2 {
+    position: static;
+  }
+
+  .goal-num {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    min-width: 56px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 32px 20px 24px;
+  }
+
+  .exercise {
+    padding: 32px 20px;
+  }
+
+  .sticker-cluster {
+    gap: 10px;
+  }
+
+  .hero-video-row {
+    margin-top: 32px;
+    margin-bottom: 28px;
+  }
 }
