@@ -519,57 +519,122 @@ h1, h2, h3 {
    RESPONSIVE -- laptop (<=1440px) and narrower screens
    ============================================================ */
 
+/* ---- 14-inch laptops and smaller (≤1440px, typical 1366×768) ---- */
 @media (max-width: 1440px) {
+  /* Scale headline down -- 10vw at 1366px = 136px, far too tall */
+  .oversized {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    line-height: 0.92;
+  }
+
   .hero {
-    padding: 40px 32px 32px;
+    padding: 32px 32px 24px;
+  }
+
+  .hero-presenter {
+    margin-bottom: 12px;
+  }
+
+  .hero-top {
+    margin-bottom: 16px;
   }
 
   /* Stack headline and context vertically */
   .hero-main {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 20px;
+    margin-top: 4px;
   }
 
-  /* Stack video and aside vertically */
-  .hero-video-row {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    max-width: 680px;
-  }
-
-  /* Stack exercise label + heading + content vertically */
-  .exercise {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 40px 32px;
-  }
-
-  /* No sticky heading needed when stacked */
-  .exercise h2 {
-    position: static;
-  }
-
-  .goal-num {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    min-width: 56px;
-  }
-}
-
-@media (max-width: 900px) {
-  .hero {
-    padding: 32px 20px 24px;
-  }
-
-  .exercise {
-    padding: 32px 20px;
+  .incident-brief {
+    font-size: 1rem;
+    margin-bottom: 20px;
   }
 
   .sticker-cluster {
     gap: 10px;
   }
 
+  /* Keep video two-column -- 280px + 1fr fits fine at 1366px */
   .hero-video-row {
-    margin-top: 32px;
-    margin-bottom: 28px;
+    grid-template-columns: 240px 1fr;
+    gap: 28px;
+    margin-top: 28px;
+    margin-bottom: 24px;
+  }
+
+  .hero-video-aside p {
+    font-size: 0.875rem;
+    margin-bottom: 12px;
+  }
+
+  /* Stack exercise sections */
+  .exercise {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 36px 32px;
+  }
+
+  .exercise h2 {
+    position: static;
+  }
+
+  /* Tighter cards */
+  .brief-card {
+    padding: 24px;
+  }
+
+  .dossier-card {
+    padding: 24px;
+  }
+
+  .goal-card__header {
+    padding: 20px 24px;
+  }
+
+  .goal-card__questions-inner {
+    padding: 20px 24px;
+  }
+
+  .interview-cta__inner {
+    padding: 20px 24px;
+  }
+
+  .goal-num {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    min-width: 48px;
+  }
+}
+
+/* ---- Tablet / small laptop (≤900px) ---- */
+@media (max-width: 900px) {
+  .hero {
+    padding: 28px 20px 20px;
+  }
+
+  .exercise {
+    padding: 28px 20px;
+  }
+
+  .sticker-cluster {
+    gap: 8px;
+  }
+
+  /* Stack video below Joshua summary */
+  .hero-video-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+
+  .brief-card,
+  .dossier-card {
+    padding: 20px;
+  }
+
+  .goal-card__header,
+  .goal-card__questions-inner {
+    padding: 16px 20px;
   }
 }
