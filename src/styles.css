@@ -368,6 +368,53 @@ h1, h2, h3 {
   color: var(--muted);
 }
 
+/* --- Interview CTA --- */
+.interview-cta {
+  background: var(--black);
+  border: 2px solid var(--black);
+  box-shadow: 4px 4px 0 var(--black);
+}
+
+.interview-cta__inner {
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.interview-cta__label {
+  font-size: 1.3rem;
+  color: var(--yellow);
+  margin: 0 0 4px;
+}
+
+.interview-cta__sub {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+}
+
+.btn-interview {
+  background: var(--yellow);
+  color: var(--black);
+  border: 2px solid var(--yellow);
+  padding: 12px 28px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.btn-interview:hover {
+  background: transparent;
+  color: var(--yellow);
+}
+
 /* Goal cards */
 .goal-card {
   background: var(--white);

@@ -135,6 +135,23 @@ export default function Interview() {
         </p>
       </div>
 
+      {/* Start interview CTA */}
+      <div className="interview-cta">
+        <div className="interview-cta__inner">
+          <div>
+            <p className="interview-cta__label handwrite">Ready? Go to BeyondTheManual and select Joshua Peter.</p>
+            <p className="interview-cta__sub">Use the interview goals below to guide your conversation.</p>
+          </div>
+          <a
+            href="https://elevenlabs.io/app/talk-to?agent_id=agent_4401kj00kdqbejvvftw2r232zy3x&branch_id=agtbrch_4801kj00ke12ee3b5q4yswph0fn2&conversation_signature=cvtkn_6701kkc2wy7efkhvy555j1ch4f6g"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="btn-interview">Interview Joshua ↗</button>
+          </a>
+        </div>
+      </div>
+
       {/* Goal cards */}
       {GOALS.map(goal => (
         <GoalCard key={goal.num} goal={goal} />
