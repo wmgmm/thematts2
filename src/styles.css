@@ -230,11 +230,12 @@ h1, h2, h3 {
 }
 
 .exercise h2 {
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 1;
+  font-size: clamp(1.5rem, 2.2vw, 2.8rem);
+  line-height: 1.05;
   font-weight: 900;
   position: sticky;
   top: 24px;
+  overflow: hidden;
 }
 
 /* --- Sidebar / Brief card (Exercise 01) --- */
