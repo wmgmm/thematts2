@@ -158,7 +158,7 @@ h1, h2, h3 {
 /* Video row */
 .hero-video-row {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: 40px;
   margin-top: 48px;
   margin-bottom: 40px;
@@ -555,9 +555,9 @@ h1, h2, h3 {
     gap: 10px;
   }
 
-  /* Keep video two-column -- 280px + 1fr fits fine at 1366px */
+  /* Keep video two-column -- small fixed width */
   .hero-video-row {
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: 200px 1fr;
     gap: 28px;
     margin-top: 28px;
     margin-bottom: 24px;
@@ -620,9 +620,9 @@ h1, h2, h3 {
     gap: 8px;
   }
 
-  /* Stack video below Joshua summary */
+  /* Small screens: keep video constrained */
   .hero-video-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 200px 1fr;
     gap: 20px;
     margin-top: 24px;
     margin-bottom: 20px;
